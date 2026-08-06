@@ -1,0 +1,1 @@
+Desktop Python suite combining decimal and binary conversion, square-root simplification, averages, powers of i and percentage calculations with validation and tests.
