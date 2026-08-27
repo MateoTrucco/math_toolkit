@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A tested Python desktop toolkit combining binary conversion, square-root simplification, averages, powers of i and configurable percentage calculations.">
+  <title>Math Utility Toolkit — Live Demo</title>
+  <link rel="stylesheet" href="web_demo/demo.css">
+  <script src="https://cdn.jsdelivr.net/pyodide/v314.0.4/full/pyodide.js"></script>
+  
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand">Mateo Trucco · Live Demo</div>
+      <nav class="links">
+        <a class="btn" href="https://github.com/MateoTrucco/math_toolkit" target="_blank" rel="noreferrer">Source ↗</a>
+        <a class="btn" href="https://mateotrucco.github.io/">Portfolio</a>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="card">
+        <p class="eyebrow">Featured · Python · Utilities</p>
+        <h1>Math Utility Toolkit</h1>
+        <p class="muted">A tested Python desktop toolkit combining binary conversion, square-root simplification, averages, powers of i and configurable percentage calculations.</p>
+      </div>
+      <aside class="card">
+        <span class="badge">DEMO</span>
+        <h2 style="margin-top:12px">Try it here</h2>
+        <p class="muted">This page is intentionally scoped as a portfolio demo. See the repository README for the full desktop/backend scope and limitations.</p>
+      </aside>
+    </section>
+    <section class="card"><div class="field"><label for="tool">Tool</label><select id="tool"><option value="d2b">Decimal → binary</option><option value="b2d">Binary → decimal</option><option value="root">Simplify square root</option><option value="avg">Average</option><option value="imag">Power of i</option><option value="pct">Apply percentage</option></select></div><div class="grid"><div class="field"><label id="labelA" for="a">Value</label><input id="a" value="42"></div><div class="field" id="fieldB"><label id="labelB" for="b">Percentage</label><input id="b" value="15"></div></div><div class="actions"><button class="primary" id="run">Calculate</button></div><p class="status" data-runtime-status>Preparing Python runtime…</p><div class="output" id="output"></div></section>
+    <footer class="footer">Demo site for <code>math_toolkit</code>. Source and tests live in the repository.</footer>
+  </main>
+  <script type="module" src="web_demo/demo.js"></script>
+</body>
+</html>
